@@ -8,9 +8,8 @@ namespace ContosoCrafts.WebApp.Pages
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
-        public JsonFileProductService ProductService { get; set; }
+        public JsonFileProductService ProductService { get; private set; }
         public IEnumerable<Product> Products { get; private set; }
-
         public IndexModel(ILogger<IndexModel> logger, JsonFileProductService productService)
         {
             _logger = logger;

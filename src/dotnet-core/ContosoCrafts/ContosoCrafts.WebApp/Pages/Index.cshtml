@@ -9,10 +9,9 @@
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 
-@foreach(var product in Model.Products)
+@foreach (var product in Model.Products)
 {
- <div>
-     <h2>@product.Website</h2>
- </div>
-    
+    <h2>
+        @product.Title
+    </h2>
 }
