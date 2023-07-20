@@ -31,13 +31,14 @@ app.UseAuthorization();
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapRazorPages();
-
-    endpoints.MapGet("/products", (context) =>
-    {
-        var products = app.Services.GetService<JsonFileProductService>().GetProducts();
-        var json = JsonSerializer.Serialize<IEnumerable<Product>>(products);
-        return context.Response.WriteAsync(json);
-    });
+    endpoints.MapControllers();
+    
+    //endpoints.MapGet("/products", (context) =>
+    //{
+    //    var products = app.Services.GetService<JsonFileProductService>().GetProducts();
+    //    var json = JsonSerializer.Serialize<IEnumerable<Product>>(products);
+    //    return context.Response.WriteAsync(json);
+    //});
 });
 //app.MapRazorPages();
 
@@ -47,6 +48,7 @@ app.Run();
 void ConfigureServices(IServiceCollection services)
 {
     services.AddRazorPages();
+    services.AddControllers();
     services.AddTransient<JsonFileProductService>();
     
 }
