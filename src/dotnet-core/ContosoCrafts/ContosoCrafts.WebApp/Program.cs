@@ -1,4 +1,11 @@
+using ContosoCrafts.WebApp.Models;
 using ContosoCrafts.WebApp.Services;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,8 +28,18 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapRazorPages();
 
-app.MapRazorPages();
+    endpoints.MapGet("/products", (context) =>
+    {
+        var products = app.Services.GetService<JsonFileProductService>().GetProducts();
+        var json = JsonSerializer.Serialize<IEnumerable<Product>>(products);
+        return context.Response.WriteAsync(json);
+    });
+});
+//app.MapRazorPages();
 
 app.Run();
 
