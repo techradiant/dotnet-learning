@@ -81,7 +81,12 @@
     "Url": "https://www.instagram.com/p/BNvESj-j8PI/",
     "Title": "Black Sweatshirt",
     "Description": "Black sweatshirt hoody with the Sick of the Internet logo.",
-    "Ratings": null
+    "Ratings": [
+      2,
+      3,
+      4,
+      5
+    ]
   },
   {
     "Id": "selinazawacki-soi-pins",
@@ -108,7 +113,23 @@
     "Url": "https://www.vogueandcode.com/shop/pretty-girls-code-tee",
     "Title": "Pretty Girls Code Tee",
     "Description": "Everyone\u2019s favorite design is finally here on a tee! The Pretty Girls Code crew-neck tee is available in a soft pink with red writing.",
-    "Ratings": null
+    "Ratings": [
+      2,
+      3,
+      3,
+      4,
+      3,
+      4,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
   },
   {
     "Id": "vogueandcode-ruby-sis-2",

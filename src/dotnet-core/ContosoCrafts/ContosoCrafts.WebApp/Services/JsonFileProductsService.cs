@@ -27,7 +27,7 @@ namespace ContosoCrafts.WebApp.Services
         public void AddRating(string productId, int rating)
         {
             var products = GetProducts();
-
+           
             if (products.First(x => x.Id == productId).Ratings == null)
             {
                 products.First(x => x.Id == productId).Ratings = new int[] { rating };
