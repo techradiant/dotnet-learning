@@ -33,8 +33,20 @@ namespace CSharpLearning.WinApp
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Subtract frmSubtract = new Subtract();  
+            frmDivide frmSubtract = new frmDivide();  
             frmSubtract.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmSubtract frmSubtract = new frmSubtract();
+            frmSubtract.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            frmFactorial frmFactorial = new frmFactorial();
+            frmFactorial.ShowDialog();
         }
     }
 }

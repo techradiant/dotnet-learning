@@ -58,17 +58,29 @@
     <Compile Include="MathOperations\frmAddition.Designer.cs">
       <DependentUpon>frmAddition.cs</DependentUpon>
     </Compile>
+    <Compile Include="MathOperations\frmFactorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MathOperations\frmFactorial.Designer.cs">
+      <DependentUpon>frmFactorial.cs</DependentUpon>
+    </Compile>
     <Compile Include="MathOperations\frmMultiply.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MathOperations\frmMultiply.Designer.cs">
       <DependentUpon>frmMultiply.cs</DependentUpon>
     </Compile>
-    <Compile Include="MathOperations\Subtract.cs">
+    <Compile Include="MathOperations\frmSubtract.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MathOperations\Subtract.Designer.cs">
-      <DependentUpon>Subtract.cs</DependentUpon>
+    <Compile Include="MathOperations\frmSubtract.Designer.cs">
+      <DependentUpon>frmSubtract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MathOperations\frmDivide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MathOperations\frmDivide.Designer.cs">
+      <DependentUpon>frmDivide.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -78,11 +90,17 @@
     <EmbeddedResource Include="MathOperations\frmAddition.resx">
       <DependentUpon>frmAddition.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MathOperations\frmFactorial.resx">
+      <DependentUpon>frmFactorial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MathOperations\frmMultiply.resx">
       <DependentUpon>frmMultiply.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MathOperations\Subtract.resx">
-      <DependentUpon>Subtract.cs</DependentUpon>
+    <EmbeddedResource Include="MathOperations\frmSubtract.resx">
+      <DependentUpon>frmSubtract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MathOperations\frmDivide.resx">
+      <DependentUpon>frmDivide.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
