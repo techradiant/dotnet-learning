@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9A466BB6-EBCE-41C4-8792-7E60348D3892}</ProjectGuid>
+    <ProjectGuid>{9CA08AE9-46FA-4274-887F-97EA9EB654CC}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>LoginPage</RootNamespace>
-    <AssemblyName>LoginPage</AssemblyName>
+    <RootNamespace>UserLogin</RootNamespace>
+    <AssemblyName>UserLogin</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -52,10 +52,19 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -81,16 +90,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\wallpaperflare.com_wallpaper %286%29.jpg" />
+    <None Include="Resources\4k-spider-man.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\3632664.png" />
+    <None Include="Resources\4k-spider-man1.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\wallpaperflare.com_wallpaper.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\wallpaperflare.com_wallpaper %281%29.jpg" />
+    <None Include="Resources\spider-man-red-skies-4k-hujuw74airzugk0h.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

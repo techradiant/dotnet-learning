@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LoginPage.Properties {
+namespace UserLogin.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace LoginPage.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("LoginPage.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("UserLogin.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -63,9 +63,9 @@ namespace LoginPage.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _3632664 {
+        internal static System.Drawing.Bitmap _4k_spider_man {
             get {
-                object obj = ResourceManager.GetObject("3632664", resourceCulture);
+                object obj = ResourceManager.GetObject("4k-spider-man", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace LoginPage.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pexels_aleksandar_pasaric_4512439 {
+        internal static System.Drawing.Bitmap _4k_spider_man1 {
             get {
-                object obj = ResourceManager.GetObject("pexels-aleksandar-pasaric-4512439", resourceCulture);
+                object obj = ResourceManager.GetObject("4k-spider-man1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,29 +83,9 @@ namespace LoginPage.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap wallpaperflare_com_wallpaper {
+        internal static System.Drawing.Bitmap spider_man_red_skies_4k_hujuw74airzugk0h {
             get {
-                object obj = ResourceManager.GetObject("wallpaperflare.com_wallpaper", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap wallpaperflare_com_wallpaper__1_ {
-            get {
-                object obj = ResourceManager.GetObject("wallpaperflare.com_wallpaper (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap wallpaperflare_com_wallpaper__6_ {
-            get {
-                object obj = ResourceManager.GetObject("wallpaperflare.com_wallpaper (6)", resourceCulture);
+                object obj = ResourceManager.GetObject("spider-man-red-skies-4k-hujuw74airzugk0h", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LoginPage
+namespace UserLogin
 {
     internal static class Program
     {
