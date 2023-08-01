@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFormsLearning.WebApp", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFormsLearning.WebApp.Tests", "WebFormsLearning.WebApp.Tests\WebFormsLearning.WebApp.Tests.csproj", "{2113CAA6-A130-4568-A9E5-47C861BEF3CE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{90789AA7-9D21-43B3-A8F9-FF5DC02A12DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2113CAA6-A130-4568-A9E5-47C861BEF3CE} = {90789AA7-9D21-43B3-A8F9-FF5DC02A12DA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4DE733F8-DEBE-4955-80AF-D95506CCA403}
