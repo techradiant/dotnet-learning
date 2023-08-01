@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33423.256
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFormsLearning.WebApp", "WebFormsLearning.WebApp\WebFormsLearning.WebApp.csproj", "{86B6C78A-1BAF-4FAD-A42B-5603631F7465}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFormsLearning.WebApp.Tests", "WebFormsLearning.WebApp.Tests\WebFormsLearning.WebApp.Tests.csproj", "{2113CAA6-A130-4568-A9E5-47C861BEF3CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86B6C78A-1BAF-4FAD-A42B-5603631F7465}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86B6C78A-1BAF-4FAD-A42B-5603631F7465}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86B6C78A-1BAF-4FAD-A42B-5603631F7465}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86B6C78A-1BAF-4FAD-A42B-5603631F7465}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2113CAA6-A130-4568-A9E5-47C861BEF3CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2113CAA6-A130-4568-A9E5-47C861BEF3CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2113CAA6-A130-4568-A9E5-47C861BEF3CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2113CAA6-A130-4568-A9E5-47C861BEF3CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4DE733F8-DEBE-4955-80AF-D95506CCA403}
+	EndGlobalSection
+EndGlobal
