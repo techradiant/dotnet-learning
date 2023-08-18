@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.33423.256
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.33927.210
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetLearning.WebApp", "DotNetLearning.WebApp\DotNetLearning.WebApp.csproj", "{1B0C5A39-6941-488E-81DD-E35A37B3991B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetLearning.WebApp", "DotNetLearning.WebApp\DotNetLearning.WebApp.csproj", "{1B0C5A39-6941-488E-81DD-E35A37B3991B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
