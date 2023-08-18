@@ -11,6 +11,12 @@ namespace DotNetLearning.WebApp.Pages
         public int Rate { get; set; }
         [BindProperty]
         public string Description { get; set; }
+
+        //public void OnGetMyOnClick()
+        //{
+        //    string stopHeader = "";
+        //}
+
         public void OnGet()
         {
             Title = "Welcome";
