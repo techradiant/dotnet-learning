@@ -35,6 +35,11 @@ namespace DotNetLearning.WebApp
                     options.AccessDeniedPath = "/Denied";
 
                 });
+
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("GraduatedYear", policy => policy.RequireClaim("GraduationYear", "2010", "2012", "2015" ));
+            });
             services.AddScoped<IMovieService, MovieService>();
             services.AddDbContext<ApplicationDbContext>(options =>
             {
