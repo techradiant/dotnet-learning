@@ -9,7 +9,7 @@ using System.Security.Cryptography.Xml;
 
 namespace DotNetLearning.WebApp.Pages
 {
-    [Authorize]
+    [Authorize(Roles ="Admin,Manager")]
     public class AddMovieModel : PageModel
     {
         [BindProperty]
