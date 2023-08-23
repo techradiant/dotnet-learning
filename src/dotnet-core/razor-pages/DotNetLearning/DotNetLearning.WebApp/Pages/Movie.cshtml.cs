@@ -1,5 +1,6 @@
 using DotNetLearning.WebApp.Data;
 using DotNetLearning.WebApp.Data.Models;
+using DotNetLearning.WebApp.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Linq;
@@ -10,14 +11,14 @@ namespace DotNetLearning.WebApp.Pages
     {
         public Movie Movie { get; set; }
 
-        private ApplicationDbContext _context;
-        public MovieModel(ApplicationDbContext context)
+        private IMovieService _service;
+        public MovieModel(IMovieService movieService)
         {
-                _context = context;
+               _service = movieService; 
         }
         public void OnGet(int id)
         {
-            Movie = _context.Movies.FirstOrDefault(m => m.Id == id);
+            Movie = _service.GetById(id);
         }
     }
 }

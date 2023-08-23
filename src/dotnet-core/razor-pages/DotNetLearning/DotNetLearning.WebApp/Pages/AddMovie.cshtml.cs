@@ -1,5 +1,6 @@
 using DotNetLearning.WebApp.Data;
 using DotNetLearning.WebApp.Data.Models;
+using DotNetLearning.WebApp.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.ComponentModel.DataAnnotations;
@@ -25,10 +26,10 @@ namespace DotNetLearning.WebApp.Pages
         //{
         //    string stopHeader = "";
         //}
-        private ApplicationDbContext _context;
-        public AddMovieModel(ApplicationDbContext context)
+        private IMovieService _service;
+        public AddMovieModel(IMovieService movieService)
         {
-            _context = context;
+            _service = movieService;
         }
 
         public void OnGet()
@@ -42,8 +43,7 @@ namespace DotNetLearning.WebApp.Pages
                 return Page();
             }
             var movie = new Movie { Title = Title, Rate = Rate, Description = Description };
-            _context.Movies.Add(movie);
-            _context.SaveChanges();
+            _service.Add(movie);
             return Redirect("Movies");
         }
     }
