@@ -1,6 +1,7 @@
 using DotNetLearning.WebApp.Data;
 using DotNetLearning.WebApp.Data.Models;
 using DotNetLearning.WebApp.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.ComponentModel.DataAnnotations;
@@ -8,6 +9,7 @@ using System.Security.Cryptography.Xml;
 
 namespace DotNetLearning.WebApp.Pages
 {
+    [Authorize]
     public class AddMovieModel : PageModel
     {
         [BindProperty]
