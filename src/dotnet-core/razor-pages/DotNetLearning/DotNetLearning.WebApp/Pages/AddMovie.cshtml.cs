@@ -1,7 +1,9 @@
+using DotNetLearning.WebApp.Data;
 using DotNetLearning.WebApp.Data.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.ComponentModel.DataAnnotations;
+using System.Security.Cryptography.Xml;
 
 namespace DotNetLearning.WebApp.Pages
 {
@@ -13,7 +15,7 @@ namespace DotNetLearning.WebApp.Pages
         [BindProperty]
         public int Rate { get; set; }
         [BindProperty]
-        
+
         public string Description { get; set; }
 
         //[BindProperty]
@@ -23,18 +25,25 @@ namespace DotNetLearning.WebApp.Pages
         //{
         //    string stopHeader = "";
         //}
+        private ApplicationDbContext _context;
+        public AddMovieModel(ApplicationDbContext context)
+        {
+            _context = context;
+        }
 
         public void OnGet()
         {
             //Title = "Welcome";
         }
-        public IActionResult OnPost() {
-            string value = $"{Title} - {Rate} - {Description}";
-            //string value = $"{Movie.Title} - {Movie.Rate} - {Movie.Description}";
-            if(!ModelState.IsValid)
+        public IActionResult OnPost()
+        {
+            if (!ModelState.IsValid)
             {
                 return Page();
-            }            
+            }
+            var movie = new Movie { Title = Title, Rate = Rate, Description = Description };
+            _context.Movies.Add(movie);
+            _context.SaveChanges();
             return Redirect("Movies");
         }
     }
